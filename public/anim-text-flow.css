@@ -1,0 +1,102 @@
+/* from https://codepen.io/hendrysadrak/pen/VLMOMJ */
+.anim-text-flow span,
+.anim-text-flow-hover:hover span {
+  animation-name: anim-text-flow-keys;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+@keyframes anim-text-flow-keys {
+  0% {
+    color: #d65cc4;
+  }
+  5% {
+    color: #5c78d6;
+  }
+  10% {
+    color: #c4d65c;
+  }
+  15% {
+    color: #d65cc4;
+  }
+  20% {
+    color: #5cd687;
+  }
+  25% {
+    color: #d6b45c;
+  }
+  30% {
+    color: #d65cba;
+  }
+  35% {
+    color: #d69b5c;
+  }
+  40% {
+    color: #8dd65c;
+  }
+  45% {
+    color: #64d65c;
+  }
+  50% {
+    color: #d6c05c;
+  }
+  55% {
+    color: #d65c6a;
+  }
+  60% {
+    color: #d6a35c;
+  }
+  65% {
+    color: #d65e5c;
+  }
+  70% {
+    color: #d6c65c;
+  }
+  75% {
+    color: #5cd678;
+  }
+  80% {
+    color: #835cd6;
+  }
+  85% {
+    color: #895cd6;
+  }
+  90% {
+    color: #be5cd6;
+  }
+  95% {
+    color: #d65c81;
+  }
+  100% {
+    color: #d68d5c;
+  }
+}
+.anim-text-flow span:nth-of-type(1),
+.anim-text-flow-hover:hover span:nth-of-type(1) {
+  animation-delay: -0.6s;
+}
+.anim-text-flow span:nth-of-type(2),
+.anim-text-flow-hover:hover span:nth-of-type(2) {
+  animation-delay: -0.5s;
+}
+.anim-text-flow span:nth-of-type(3),
+.anim-text-flow-hover:hover span:nth-of-type(3) {
+  animation-delay: -0.4s;
+}
+.anim-text-flow span:nth-of-type(4),
+.anim-text-flow-hover:hover span:nth-of-type(4) {
+  animation-delay: -0.3s;
+}
+.anim-text-flow span:nth-of-type(5),
+.anim-text-flow-hover:hover span:nth-of-type(5) {
+  animation-delay: -0.2s;
+}
+.anim-text-flow span:nth-of-type(6),
+.anim-text-flow-hover:hover span:nth-of-type(6) {
+  animation-delay: -0.1s;
+}
+.anim-text-flow span:nth-of-type(7),
+.anim-text-flow-hover:hover span:nth-of-type(7) {
+  animation-delay: 0s;
+}

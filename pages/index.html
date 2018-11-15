@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home Again, Home Again</title>
+    <meta name="description" content="How many steps until you make it back to (0,0)?</span>">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=560">
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/glitch-style.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/anim-text-flow.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Home Again, Home Again
+      </h1>
+      <p>
+        It is <a href="https://www.dartmouth.edu/~chance/teaching_aids/books_articles/probability_book/Chapter12.pdf" target="_blank">mathematically proven</a> that a random walk will eventually return to its origin.<br />
+        How many steps until you make it back to <span style="white-space: nowrap">( 0, 0 )?</span> <a class="reset" href="#">START OVER</a>
+      </p>
+      <h2 class="location">
+        ( 0, 0 )
+      </h2>
+      <h2 class="steps">
+        0 Steps
+      </h2>
+    </header>
+    <main>
+      <div class="graph-container">
+        <div class="compass hidden"></div>
+        <div class="star"></div>
+        <div class="player"></div>
+        <div class="ux hidden">
+          <div class="you-win message anim-text-flow">
+            <span>Y</span>
+            <span>O</span>
+            <span>U</span>
+            <span> </span>
+            <span>W</span>
+            <span>I</span>
+            <span>N</span>
+          </div>
+          <div class="message game-over hidden">
+            GAME OVER
+          </div>
+          <div class="score">After 0 steps</div>
+          <div class="buttons">
+              <a href="#" class="reset hidden" style="
+                color: orangered;
+                text-decoration: none;
+              ">Reset?</a>
+              <a href="#" class="submit" style="
+                color: lightgreen;
+                text-decoration: none;
+              ">Submit Score</a>
+          </div>
+        </div>
+        
+      </div>
+      <div class="high-score-container">
+        <h2> High Scores </h2>
+        <table>
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Top Score</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>-</td>
+              <td>#</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>#</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>#</td>
+            </tr>
+          </tbody>
+          
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      Made with love on <a href="https://glitch.com" target="_blank">Glitch</a> by <a href="https://twitter.com/hypirlink" target="_blank">@hypirlink</a>
+    </footer>
+    
+    <script src="/graphpaper.js"></script>
+    
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js"></script>
+    
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+    <!-- 
+    <script>
+      // Register ServiceWorker for caching
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker.register('/sw.js', {scope: '/'})
+      }
+    </script>
+    -->
+  </body>
+</html>
