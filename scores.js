@@ -8,7 +8,7 @@ const defaultScores = [
 
 module.exports.getScores = () => {
   try {
-    return JSON.parse(localStorage.getItem('scores'))
+    return JSON.parse(localStorage.getItem('scores')) || []
   } catch (e) {
     return []
   }
